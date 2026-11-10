@@ -1,0 +1,16 @@
+{
+  "name": "easygen-auth",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Production-ready sign up / sign in module — NestJS + MongoDB API, React + TypeScript web app",
+  "workspaces": ["api", "web"],
+  "engines": { "node": ">=20.11" },
+  "scripts": {
+    "dev": "npm run dev --workspace api & npm run dev --workspace web",
+    "build": "npm run build --workspace web && npm run build --workspace api",
+    "start": "npm run start:prod --workspace api",
+    "lint": "npm run lint --workspaces --if-present",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present"
+  }
+}
