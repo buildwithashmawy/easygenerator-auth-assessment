@@ -9,7 +9,7 @@ A production-minded **sign up / sign in** module.
 | Quality  | Jest + Supertest (API unit & e2e), Vitest + Testing Library (web), ESLint, GitHub Actions |
 | Deploy   | Single Docker image on Railway (Nest serves the built SPA → one origin) |
 
-**Live demo:** _see the repository description_ · **API docs:** `/api/docs`
+**Live demo:** https://app-production-fad8ef04.up.railway.app · **API docs:** https://app-production-fad8ef04.up.railway.app/api/docs
 
 ---
 
