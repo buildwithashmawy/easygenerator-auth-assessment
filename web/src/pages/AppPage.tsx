@@ -40,13 +40,8 @@ export function AppPage() {
 
       <main className="mx-auto max-w-5xl px-6 py-12 sm:py-16">
         <section className="relative overflow-hidden rounded-[28px] bg-ink-900 px-8 py-12 text-white sm:px-12 sm:py-16 animate-rise">
-          <div className="absolute -right-24 -top-32 size-[420px] rounded-full bg-violet/40 blur-[110px]" />
-          <div className="absolute -bottom-40 left-10 size-[360px] rounded-full bg-lime/15 blur-[110px]" />
           <div className="relative">
-            <p className="inline-flex items-center gap-2 rounded-full bg-white/[0.08] px-3 py-1.5 text-xs font-medium text-white/80 ring-1 ring-white/10">
-              <span className="size-1.5 rounded-full bg-lime shadow-[0_0_10px_#c8f169]" /> Signed in as {firstName}
-            </p>
-            <h1 className="mt-6 max-w-2xl font-display text-4xl font-semibold leading-[1.05] tracking-[-0.025em] sm:text-[56px]">
+            <h1 className="max-w-2xl font-display text-4xl font-semibold leading-[1.05] tracking-[-0.025em] sm:text-[56px]">
               Welcome to the application.
             </h1>
             <p className="mt-5 max-w-lg text-[15px] leading-6 text-white/60">
@@ -192,7 +187,7 @@ function UserMenu({ user, onSignOut, signingOut }: { user: User; onSignOut: () =
         aria-expanded={open}
         className="flex items-center gap-2.5 rounded-full py-1 pl-1 pr-3 transition-colors hover:bg-ink-100 focus-visible:ring-4 focus-visible:ring-violet/25"
       >
-        <span className="grid size-8 place-items-center rounded-full bg-gradient-to-br from-violet to-coral text-xs font-semibold text-white">
+        <span className="grid size-8 place-items-center rounded-full bg-lime text-xs font-semibold text-ink-900">
           {initials}
         </span>
         <span className="hidden text-sm font-medium sm:block">{user.name}</span>

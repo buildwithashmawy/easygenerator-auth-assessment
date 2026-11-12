@@ -1,4 +1,4 @@
-import { BookOpenCheck, Check, PlayCircle, Sparkles } from 'lucide-react';
+import { BookOpenCheck, Check, PlayCircle } from 'lucide-react';
 import type { ReactNode } from 'react';
 import { Logo } from '@/components/ui/Logo';
 
@@ -37,9 +37,7 @@ function BrandPanel() {
       aria-hidden="true"
       className="relative m-3 hidden overflow-hidden rounded-[28px] bg-ink-900 text-white lg:flex lg:flex-col"
     >
-      {/* Ambient light + fine grid */}
-      <div className="absolute -right-40 -top-40 size-[520px] rounded-full bg-violet/40 blur-[120px]" />
-      <div className="absolute -bottom-48 -left-24 size-[420px] rounded-full bg-lime/20 blur-[120px]" />
+      {/* Fine grid */}
       <div
         className="absolute inset-0 opacity-[0.07]"
         style={{
@@ -51,9 +49,6 @@ function BrandPanel() {
       />
 
       <div className="relative flex flex-1 flex-col justify-between p-12 xl:p-16">
-        <span className="inline-flex w-fit items-center gap-2 rounded-full bg-white/[0.07] px-3 py-1.5 text-xs font-medium text-white/80 ring-1 ring-white/10">
-          <Sparkles className="size-3.5 text-lime" /> Course authoring, simplified
-        </span>
 
         <div className="relative mx-auto my-10 w-full max-w-[400px]">
           <CourseCard />
@@ -73,8 +68,7 @@ function BrandPanel() {
             Turn what your team knows into courses people <span className="text-lime">finish</span>.
           </h2>
           <p className="mt-4 max-w-sm text-[15px] leading-6 text-white/60">
-            Build, share and track learning in one calm workspace. Your account is protected with
-            httpOnly session cookies and rotating refresh tokens.
+            Write a course in an afternoon, share it with a link, and see who finished it.
           </p>
         </div>
       </div>
@@ -90,11 +84,9 @@ function CourseCard() {
     { title: 'Final assessment', done: false },
   ];
   return (
-    <div className="rounded-3xl bg-white/[0.06] p-5 shadow-lift ring-1 ring-white/10 backdrop-blur-xl animate-float">
-      <div className="h-28 rounded-2xl bg-[radial-gradient(circle_at_20%_20%,#c8f169,transparent_45%),radial-gradient(circle_at_90%_70%,#ff8a5c,transparent_50%),linear-gradient(135deg,#7c6cff,#3a3760)] p-4">
-        <span className="rounded-full bg-black/25 px-2.5 py-1 text-[11px] font-medium backdrop-blur">
-          Sales onboarding · 4 modules
-        </span>
+    <div className="-rotate-2 rounded-3xl bg-ink-800 p-5 shadow-lift ring-1 ring-white/10">
+      <div className="flex h-28 items-end rounded-2xl bg-lime p-4 text-ink-900">
+        <span className="text-[11px] font-semibold uppercase tracking-wider">Sales onboarding · 4 modules</span>
       </div>
       <div className="mt-5 flex items-center justify-between">
         <div>
